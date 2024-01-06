@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+<!-- Will be white -->
+<div class="bg-white dark:bg-black">
+    <!-- ... -->
+  </div>
+</body>
+</html>
+
+<!-- Dark mode enabled -->
+<html class="dark">
+<body>
+  <!-- Will be black -->
+  <div class="bg-white dark:bg-black">
+    <!-- ... -->
+  </div>
+
+    <!-- Menú Hamburguesa -->
+    <div class="md:hidden fixed top-4 right-4">
+    <button id="burger-icon" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>   
+</div>
+
+    
+    <nav class="hidden md:flex items-center justify-between px-28 py-5 text-white">
+        <img src="images/logo.png" class="w-40 cursor-pointer">
+        <ul class="flex space-x-5">
+            <li><a href="#" class="no-underline">Menú Principal</a></li>
+            <li><a href="#" class="no-underline">Acerca De</a></li>
+            <li><a href="#" class="no-underline">Iniciar Sesión</a></li>
+            <li><a href="#" class="no-underline">Registrate gratis</a></li>
+        </ul>
+    </nav>
+    
+      
+  
+    <!-- Menú desplegable para dispositivos móviles -->
+    <div id="mobile-menu" class="md:hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 hidden">
+        <button id="close-menu" class="text-white absolute top-4 right-4 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <ul class="flex flex-col items-center justify-center h-full animate-slide">
+            <li><a href="#" class="text-white no-underline py-4">Menú Principal</a></li>
+            <li><a href="#" class="text-white no-underline py-4">Acerca De</a></li>
+            <li><a href="#" class="text-white no-underline py-4">Iniciar Sesión</a></li>
+            <li><a href="#" class="text-white no-underline py-4">Registrate gratis</a></li>
+        </ul>
+    </div>
+
+    <div class="container text-white flex flex-col md:flex-row items-center justify-between mt-36 max-w-xl mx-4 md:mx-20">
+        <div class="md:w-1/2 md:text-right md:pr-10">
+            <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-2 md:mb-6 md:mr-4">
+                Delivery del pedido<br>en 15 minutos
+            </h1>
+        </div>
+        <div class="md:w-1/2 sm:mt-4"> <!-- Asegúrate de que la clase sm:mt-4 esté presente -->
+            <div class="text-lg text-left mb-10">
+                <p>Te ofrecemos una atención y servicios de calidad a todos nuestros comensales. Siéntete libre de elegir lo que te apetezca en el momento. Atendemos de 10 a.m a 8 p.m. Si te sientes conforme o inconforme con nuestro servicio, siempre puedes calificarnos y ayudarnos a mejorar.</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <!-- Menú de Combos -->
+    <div class="container mt-10 mx-auto">
+        <h2 class="text-4xl font-semibold mb-6 text-white">Escoge tu combo saludable </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Combo 1 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="./images/Macarrones.jpg" alt="Combo 1" class="mb-4 rounded-md">
+                <h3 class="text-xl font-semibold mb-2">Combo 1</h3>
+                <p class="text-gray-600 mb-4">Macarrones preparados con brócoli y camarones al ajo sazonado con especias salteadas; una opción baja en sodio y aunque no parece sustanciosa es muy llenadera, ideal para cuando quieres descansar de un día con comida pesada.</p>
+                <button class="bg-green-500 text-white py-2 px-4 rounded-full hover:bg-green-600 duration-300">Seleccionar Plato</button>
+            </div>
+            <!-- Combo 2 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="./images/plato-saludable.jpg" alt="Combo 2" class="mb-4 rounded-md">
+                <h3 class="text-xl font-semibold mb-2">Combo 2</h3>
+                <p class="text-gray-600 mb-4">Rebanadas de Pollo selladas al vacio con una guarnición de garbanzos acompañados por una ensalada clásica y cortados de palta; sin duda una de los más recomendados, platillo rico en fibra, hierro y vitaminas.</p>
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 duration-300">Seleccionar Plato</button>
+            </div>
+            <!-- Combo 3 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="./images/res.jpeg" alt="Combo 3" class="mb-4 rounded-md">
+                <h3 class="text-xl font-semibold mb-2">Combo 3</h3>
+                <p class="text-gray-600 mb-4">Cuadritos de res salteados con pimiento, tomate y cebollas a los cuales estos se le agrega cebolla china, servido sobre una cama de lechuga y mayonesa casera; Nuestra mejor opción para los amantes de la carne.</p>
+                <button class="bg-purple-500 text-white py-2 px-4 rounded-full hover:bg-purple-600 duration-300">Seleccionar Plato</button>
+            </div>
+            <!-- Combo 4 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="./images/CaldoDePollo.jpg" alt="Combo 4" class="mb-4 rounded-md">
+                <h3 class="text-xl font-semibold mb-2">Combo 4</h3>
+                <p class="text-gray-600 mb-4">La clásica sopa de pollo, no necesita mayor presentación, ideal para dietas blandas o cuando quieras solamente darte un gustito a media tarde.</p>
+                <button class="bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600 duration-300">Seleccionar Plato</button>
+            </div>
+        </div>
+    </div>
+     <!-- Botón WhatsApp Flotante -->
+<a href="https://wa.me/123456789" target="_blank" class="fixed bottom-8 right-8 bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-600 duration-300">
+    <img id="whatsappIcon" src="./images/whatsapp.png" alt="WhatsApp" class="w-8 h-8 mr-2 inline-block">
+    Contáctanos
+</a>
+    
+     <!-- Opiniones de la Gente -->
+     <section class="container mt-20 flex flex-col items-center">
+        <h2 class="text-white text-4xl font-semibold mb-6 text-center">Opiniones de la Gente</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Contenedor Opinión 1 -->
+            <div class="flex justify-center">
+                <div class="bg-gray-200 p-6 rounded-full shadow-md text-center">
+                    <img src="./images/chica 1.jpeg" alt="Opinion 1" class="w-16 h-16 mx-auto mb-4 rounded-full">
+                    <p class="text-black mb-2">"¡Increíble experiencia! La comida es deliciosa y la entrega fue rápida. Definitivamente, ¡volveré a ordenar!"</p>
+                    <p class="text-black">- Juan Pérez</p>
+                </div>
+            </div>
+            <!-- Contenedor Opinión 2 -->
+            <div class="flex justify-center">
+                <div class="bg-gray-200 p-6 rounded-full shadow-md text-center">
+                    <img src="./images/contentImage.jpeg" alt="Opinion 2" class="w-16 h-16 mx-auto mb-4 rounded-full">
+                    <p class="text-black mb-2">"Servicio al cliente excepcional. La presentación de los platos es elegante y la calidad es insuperable. ¡Muy recomendado!"</p>
+                    <p class="text-black">- María González</p>
+                </div>
+            </div>
+            <!-- Contenedor Opinión 3 -->
+            <div class="flex justify-center">
+                <div class="bg-gray-200 p-6 rounded-full shadow-md text-center">
+                    <img src="./images/descargar.jpeg" alt="Opinion 3" class="w-16 h-16 mx-auto mb-4 rounded-full">
+                    <p class="text-black mb-2">"Probé varios combos y todos estaban deliciosos. Además, el proceso de pedido es sencillo. ¡Excelente servicio!"</p>
+                    <p class="text-black">- Pedro Rodríguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Formulario de Comentarios -->
+    <section class="container mt-10 flex items-center flex-col">
+        <h2 class="text-white text-5xl font-semibold mb-6">Tu también puedes comentar: </h2>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="mb-4">
+                <label for="comment" class="block text-sm font-medium text-white">Comentario</label>
+                <textarea id="comment" name="comment" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="rating" class="block text-sm font-medium text-white">Calificación (1-5 estrellas)</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" class="mt-1 p-3 w-full border border-gray-300 rounded-md">
+            </div>
+            <div class="col-span-2">
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-600 duration-300">Enviar Comentario</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="pt-5 bg-black text-gray-200">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div class="w-full px-4 hidden sm:block lg:w-2/12">
+                    <div class="mt-5 mb-5 w-full">
+                        <p class="text-dark">
+                            Sed ut perspiciatis undmnis is iste natus error sit amet
+                            voluptatem totam rem aperiam. Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-2/12 inline-block ">
+                    <h4 class="mb-9 text-lg font-semibold text-dark">Recursos</h4>
+                    <ul>
+                        <li class="hover:underline"><a href="#">Preguntas Frecuentes</a></li>
+                        <li class="hover:underline"><a href="#">Corporación</a></li>
+                        <li class="hover:underline"><a href="#">Centro de Ayuda</a></li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-2/12">
+                    <h4 class="mb-9 text-lg font-semibold text-dark">Compañia</h4>
+                    <ul>
+                        <li class="hover:underline"><a href="#">Sucursales</a></li>
+                        <li class="hover:underline"><a href="#">Clientes</a></li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 sm:w-1/2 lg:w-3/12">
+                    <div class="mb-10 w-full">
+                        <h4 class="mb-9 text-lg font-semibold text-dark">Redes Sociales</h4>
+                        <div class="mb-6 flex items-center">
+                            <a href="#" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border ">
+                                <svg width="8" height="16" viewBox="0 0 8 16" class="fill-current">
+                                    <path
+                                        d="M7.43902 6.4H6.19918H5.75639V5.88387V4.28387V3.76774H6.19918H7.12906C7.3726 3.76774 7.57186 3.56129 7.57186 3.25161V0.516129C7.57186 0.232258 7.39474 0 7.12906 0H5.51285C3.76379 0 2.54609 1.44516 2.54609 3.5871V5.83226V6.34839H2.10329H0.597778C0.287819 6.34839 0 6.63226 0 7.04516V8.90323C0 9.26452 0.243539 9.6 0.597778 9.6H2.05902H2.50181V10.1161V15.3032C2.50181 15.6645 2.74535 16 3.09959 16H5.18075C5.31359 16 5.42429 15.9226 5.51285 15.8194C5.60141 15.7161 5.66783 15.5355 5.66783 15.3806V10.1419V9.62581H6.13276H7.12906C7.41688 9.62581 7.63828 9.41935 7.68256 9.10968V9.08387V9.05806L7.99252 7.27742C8.01466 7.09677 7.99252 6.89032 7.85968 6.68387C7.8154 6.55484 7.61614 6.42581 7.43902 6.4Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border ">
+                                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                    <path
+                                        d="M14.2194 2.06654L15.2 0.939335C15.4839 0.634051 15.5613 0.399217 15.5871 0.2818C14.8129 0.704501 14.0903 0.845401 13.6258 0.845401H13.4452L13.3419 0.751468C12.7226 0.258317 11.9484 0 11.1226 0C9.31613 0 7.89677 1.36204 7.89677 2.93542C7.89677 3.02935 7.89677 3.17025 7.92258 3.26419L8 3.73386L7.45806 3.71037C4.15484 3.61644 1.44516 1.03327 1.00645 0.587084C0.283871 1.76125 0.696774 2.88845 1.13548 3.59296L2.0129 4.90802L0.619355 4.20352C0.645161 5.18982 1.05806 5.96477 1.85806 6.52838L2.55484 6.99804L1.85806 7.25636C2.29677 8.45401 3.27742 8.94716 4 9.13503L4.95484 9.36986L4.05161 9.93346C2.60645 10.8728 0.8 10.8024 0 10.7319C1.62581 11.7652 3.56129 12 4.90323 12C5.90968 12 6.65806 11.9061 6.83871 11.8356C14.0645 10.2857 14.4 4.41487 14.4 3.2407V3.07632L14.5548 2.98239C15.4323 2.23092 15.7935 1.8317 16 1.59687C15.9226 1.62035 15.8194 1.66732 15.7161 1.6908L14.2194 2.06654Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border ">
+                                <svg width="16" height="12" viewBox="0 0 16 12" class="fill-current">
+                                    <path
+                                        d="M15.6645 1.88018C15.4839 1.13364 14.9419 0.552995 14.2452 0.359447C13.0065 6.59222e-08 8 0 8 0C8 0 2.99355 6.59222e-08 1.75484 0.359447C1.05806 0.552995 0.516129 1.13364 0.335484 1.88018C0 3.23502 0 6 0 6C0 6 0 8.79263 0.335484 10.1198C0.516129 10.8664 1.05806 11.447 1.75484 11.6406C2.99355 12 8 12 8 12C8 12 13.0065 12 14.2452 11.6406C14.9419 11.447 15.4839 10.8664 15.6645 10.1198C16 8.79263 16 6 16 6C16 6 16 3.23502 15.6645 1.88018ZM6.4 8.57143V3.42857L10.5548 6L6.4 8.57143Z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="mr-3 flex h-8 w-8 items-center justify-center rounded-full border ">
+                                <svg width="14" height="14" viewBox="0 0 14 14" class="fill-current">
+                                    <path
+                                        d="M13.0214 0H1.02084C0.453707 0 0 0.451613 0 1.01613V12.9839C0 13.5258 0.453707 14 1.02084 14H12.976C13.5432 14 13.9969 13.5484 13.9969 12.9839V0.993548C14.0422 0.451613 13.5885 0 13.0214 0ZM4.15142 11.9H2.08705V5.23871H4.15142V11.9ZM3.10789 4.3129C2.42733 4.3129 1.90557 3.77097 1.90557 3.11613C1.90557 2.46129 2.45002 1.91935 3.10789 1.91935C3.76577 1.91935 4.31022 2.46129 4.31022 3.11613C4.31022 3.77097 3.81114 4.3129 3.10789 4.3129ZM11.9779 11.9H9.9135V8.67097C9.9135 7.90323 9.89082 6.8871 8.82461 6.8871C7.73571 6.8871 7.57691 7.74516 7.57691 8.60323V11.9H5.51254V5.23871H7.53154V6.16452H7.55423C7.84914 5.62258 8.50701 5.08065 9.52785 5.08065C11.6376 5.08065 12.0232 6.43548 12.0232 8.2871V11.9H11.9779Z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="text-base text-body-color">&copy; 2023 Tailwind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </footer>
+
+
+   
+</body>
+</html>
